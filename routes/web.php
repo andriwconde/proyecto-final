@@ -11,6 +11,69 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    phpinfo();
 });
+
+//Route::get('/', 'WebsiteController@index');
+Route::get('/products', 'ProductController@index');
+Route::get('/products/add', 'ProductController@create');
+Route::get('/products/{id}', 'ProductController@show');
+Route::post('/products', 'ProductController@store');
+Route::get('/products/{id}/edit', 'ProductController@edit');
+Route::patch('/products/{id}', 'ProductController@update');
+Route::delete('/products/{id}', 'ProductController@destroy');
+
+Route::get('/home', function () {
+    return 'Presentacion de todos nuestros menus'; /* view('home') */
+});
+
+Route::get('/detalle/{id}', function ($id) {
+ 
+    return 'Aqui vemos el detalle del producto' . ' ' . $id;
+    /* 
+    view('detalle',
+    [ 
+        'id' => $id,
+        'precios' => 88888.99,
+        'descripcion' => "Lorem ipsum dolor",
+        'titulo' => "Lorem Ipsum",
+        'imagen' => "imagen",
+    ]); 
+    */
+
+});
+
+Route::get('/cart', function () {
+    return 'Este es tu carrito'; /* view('cart') */
+});
+
+Route::post('/cart', function () {
+    return 'Podes agregar nuevos productos'; 
+});
+
+Route::get('/faq', function () {
+    return 'La preguntas que mas nos hacen'; /* view('faq') */;
+});
+
+Route::get('/login', function () {
+    return 'Dime quien eres';
+});
+Route::post('/login', function () {
+    return 'Hola...';
+});
+
+Route::get('/registro', function () {
+    return 'Registrate para disfrutar nuestras viandas'; /* view('registro') */;
+});
+Route::post('/registro', function () {
+    return 'Tus datos estan seguros en nuestra BD'; 
+});
+
+Route::get('/contacto', function () {
+    return 'Encontranos en Digital House'; /* view('contacto') */;
+});
+
+
+
