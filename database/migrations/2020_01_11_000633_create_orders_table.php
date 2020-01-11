@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRollsTable extends Migration
+class CreateOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreateRollsTable extends Migration
      */
     public function up()
     {
-        Schema::create('rolls', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->string('title', 100);
-            $table->string('description', 250);
+            $table->rememberToken();
+            $table->string('shipping_address');
+            $table->string('status');
+            $table->unsignedBigInteger('purchase_id');
+            $table->foreign('purchase_id')->references('id')->on('purchases');
         });
     }
 
@@ -28,6 +31,6 @@ class CreateRollsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rolls');
+        Schema::dropIfExists('orders');
     }
 }

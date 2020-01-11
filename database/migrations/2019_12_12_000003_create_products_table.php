@@ -19,6 +19,8 @@ class CreateProductsTable extends Migration
             $table->string('name', 100);
             $table->string('image', 250);
             $table->float('price',8,2);
+            $table->unsignedBigInteger('menu_id');
+            $table->foreign('menu_id')->references('id')->on('menus');
         });
     }
 
