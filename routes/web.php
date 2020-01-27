@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/phpinfo', function () {
-    phpinfo();
-});
+
 
 
 Route::get('/', 'WebsiteController@index');
@@ -26,8 +24,8 @@ Route::get('/products/{id}/edit', 'ProductController@edit');
 Route::patch('/products/{id}', 'ProductController@update');
 Route::delete('/products/{id}', 'ProductController@destroy');
 
-Route::get('/home', function () {
-    return 'Presentacion de todos nuestros menus'; /* view('home') */
+Route::get('/', function () {
+    return view('home') ;
 });
 
 Route::get('/detalle/{id}', function ($id) {
@@ -63,5 +61,5 @@ Route::get('/contacto', function () {
 });
 
 Auth::routes();
-
+//
 Route::get('/home', 'HomeController@index')->name('home');
