@@ -1,0 +1,121 @@
+
+/* CARRITO */
+
+section {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  widht: 60%;
+
+}
+
+section .card{
+  width: 60%;
+  flex: column;
+  padding: 15px;
+  flex-direction: column;
+}
+
+section .card-body a{
+  background-color: #127475;
+
+}
+.tarjetaproducto {
+ border-radius: 25 rem;
+
+}
+section img{
+width: 100%;
+
+}
+
+aside .opciones {
+  border-radius: 25 rem;
+  flex: column;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  flex-direction: column;
+}
+
+aside button .botoncalendario {
+  background-color: #F5DFBB;
+}
+
+aside button .botonfinalizar {
+  background-color: #127475;
+}
+
+aside a:hover{
+  text-decoration: none;
+  color: #FFF;
+}
+
+div .datosusuario{
+  flex: column;
+  border-radius: 25 rem;
+  flex: column;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  flex-direction: column;
+}
+
+.tn .btn-primary .btn-outline-dark{
+  color: black;
+}
+hr {
+  display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 1px;
+}
+
+
+ul{
+  list-style: none;
+}
+
+div .botondireccion{
+  flex-direction: column;
+}
+div ul .list-group{
+  padding-left: 15px;
+}
+
+/* FOOTER */
+footer{
+  background-color: #562C2C;
+}
+footer div.footer-copyright{
+  color: #E56B6F;
+  background-color: #462323;
+}
+/* LOGOS FOOTER */
+i{
+  color: #E56B6F;
+}
+/* ENLACES */
+a{
+  color: #127475;
+}
+/* IMAGENES */
+.img{
+  width: 100%;
+}
+/* TITULO MENU */
+#tituloMenu{
+  color: #562C2C;
+  text-transform: uppercase;
+  background-color: #F5DFBB;
+  padding-left: 15px;
+}
+
+/*.row{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 2vh;
+}

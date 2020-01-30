@@ -18,7 +18,6 @@ class CreateMenusTable extends Migration
             $table->timestamps();
             $table->rememberToken();
             $table->string('name');
-            $table->string('imagen');
         });
     }
 

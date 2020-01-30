@@ -3,6 +3,9 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Generator as Faker;
+use App\Role;
+use App\Menu;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,11 +16,31 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-      DB::table("products")->insert([
-        "name"=>$faker->word(),
-        "price"=>$faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = NULL),
-        "image"=>$faker->imageUrl($width = 640, $height = 480),
-      ]);
+      $menues = array(
+        [
+        "name" => "Vegano"
+        ],
+        [
+          "name" => "Postres"
+        ]
+      );
+
+      
+      foreach ($menues as $menu) {
+        Menu::insert($menu);
+      }
+
+      $roles = array(
+        [
+        "status" => "User"
+        ],
+        [
+          "status" => "Admin"
+        ]
+      );
+      foreach ($roles as $role) {
+        Role::insert($role);
+      }
     // $this->call(SeederPrueba::class);
 
    }

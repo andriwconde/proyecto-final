@@ -1,0 +1,32 @@
+/* FOOTER */
+footer{
+  background-color: #562C2C;
+}
+footer div.footer-copyright{
+  color: #E56B6F;
+  background-color: #462323;
+}
+/* LOGOS FOOTER */
+i{
+  color: #E56B6F;
+}
+/* ENLACES */
+a{
+  color: #127475;
+}
+/* IMAGENES */
+section img{
+  width: 100%;
+}
+/* TITULO MENU */
+#tituloMenu{
+  color: #562C2C;
+  text-transform: uppercase;
+  background-color: #F5DFBB;
+  padding-left: 15px;
+}
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 2vh;
+}

@@ -17,16 +17,13 @@
 Route::get('/', 'WebsiteController@index');
 
 Route::get('/products', 'ProductController@index');
-Route::get('/products/add', 'ProductController@create');
+Route::get('/products/add', 'ProductController@create')->middleware('admin');
 Route::get('/products/{id}', 'ProductController@show');
 Route::post('/products', 'ProductController@store');
 Route::get('/products/{id}/edit', 'ProductController@edit');
 Route::patch('/products/{id}', 'ProductController@update');
 Route::delete('/products/{id}', 'ProductController@destroy');
 
-Route::get('/', function () {
-    return view('home') ;
-});
 
 Route::get('/detalle/{id}', function ($id) {
 

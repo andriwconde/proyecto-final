@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $products = Product::paginate(10);
-        return view('website.products.index', 
+        return view('website.products.index',
         [
             'products' => $products,
         ]);
@@ -28,7 +28,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.products.create', 
+        return view('admin.products.create',
         [
             'product' => new Product,
         ]);
@@ -42,8 +42,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product = Product::create($request->all());
-        return redirect('/products/' . $product->id);
+        Product::create($request->all());
+        return redirect('/home');
     }
 
     /**
@@ -55,7 +55,7 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         $product = Product::find($id);
-        return view('website.products.show', 
+        return view('website.products.show',
         [
             'product' => $product,
         ]);
@@ -70,8 +70,8 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::findOrFail($id);
-        
-        return view('admin.products.edit', 
+
+        return view('admin.products.edit',
         [
             'product' => $product,
         ]);
@@ -88,7 +88,7 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $product->update($request->all());
-        return redirect('/products/' . $product->id);
+        return redirect('/home');
     }
 
     /**
@@ -101,6 +101,6 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $product->delete();
-        return redirect('/products');
+        return redirect('/home');
     }
 }

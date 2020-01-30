@@ -23,6 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+      // mandar a la vista el listado de menues
+      // Agregar el modelo de Menu
+      // Llamar al metodo Menu::all
         return view('home');
     }
 }

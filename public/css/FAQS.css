@@ -1,0 +1,85 @@
+
+#pregunta1{
+background-color: #ffa3af;
+font-family: 'Hind', sans-serif;
+}
+#pregunta2{
+  background-color: #ffa3af;
+  font-family: 'Hind', sans-serif;
+}
+#pregunta3{
+  background-color: #ffa3af;
+  font-family: 'Hind', sans-serif;
+}
+#headingOne{
+background-color: #97d8c4;
+}
+#headingTwo{
+background-color: #00af54;
+}
+#headingThree{
+background-color: #fbaf00
+}
+*{
+  font-family: 'Poppins', sans-serif;
+}
+body{
+background-color: #F5DFBB;
+}
+form{
+  padding: 10px;
+}
+/* TITULOS */
+h1.col-md-12{
+  padding: 2vh;
+  color: #127475;
+  margin-bottom: 0px;
+  background-color: #462323;
+}
+h5.col-md-12{
+  padding: 2vh;
+  color: #E56B6F;
+  background-color: #562C2C;
+}
+/* COLOR BOTONES */
+.btn-outline-dark{
+  color: #FFF;
+  background-color: #E56B6F;
+  border-color: #E56B6F;
+}
+.btn-outline-dark:hover{
+  background-color: #BD575A;
+  border-color: #BD575A;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+
+/* CARRUSEL */
+.carousel-inner{
+  height: 60vh;
+}
+/* FOOTER */
+footer{
+  background-color: #562C2C;
+}
+footer div.footer-copyright{
+  color: #E56B6F;
+  background-color: #462323;
+}
+/* LOGOS FOOTER */
+i{
+  color: #E56B6F;
+}
+/* ENLACES */
+a{
+  color: #127475;
+}
+#botonhead{
+  background-color: #562C2C;
+}
+#titulo{
+
+}
