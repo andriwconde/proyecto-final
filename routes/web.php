@@ -14,7 +14,7 @@
 
 
 
-Route::get('/', 'WebsiteController@index');
+Route::get('/', 'HomeController@index');
 
 Route::get('/products', 'ProductController@index');
 Route::get('/products/add', 'ProductController@create')->middleware('admin');

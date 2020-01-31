@@ -8,6 +8,8 @@ class Menu extends Model
 {
       protected $fillable = ['name'];
 
-      // function para traer todos los producto de un menu
-      // repasar hasMany y belongsTo
+      public function products(){
+        return $this->hasMany(product::class, 'menu_id');
+      }
+
 }

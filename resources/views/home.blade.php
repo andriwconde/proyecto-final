@@ -1,4 +1,4 @@
-@extends('layouts\app')
+@extends('layouts.app')
 
 @section('content')
 @if (session('status'))
@@ -18,12 +18,11 @@
       <h1 id="tituloMenu">{{$menu->name}}</h1>
 
       <div class="row">
-        @foreach ($menu->products as $product)  
+        @foreach ($menu->products as $product)
           <div class="col-md-4">
             <div class="row">
                 <img src="img/postres.jpeg" alt="Menu">
-                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p class="grey-text"></p>
                 <a class="btn btn-outline-dark btn-sm" href="">Ver detalle</a>
             </div>
           </div>
