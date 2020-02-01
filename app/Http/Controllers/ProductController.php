@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
 use Illuminate\Http\Request;
+use App\Product;
+use App\Menu;
 
 class ProductController extends Controller
 {
@@ -14,7 +15,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        $products = Product::paginate(10);
+        $products = Product::all();
         return view('website.products.index',
         [
             'products' => $products,
@@ -31,19 +32,31 @@ class ProductController extends Controller
         return view('admin.products.create',
         [
             'product' => new Product,
+            'menues'=> Menu::all(),
+
         ]);
     }
-
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $rq)
     {
-        Product::create($request->all());
-        return redirect('/home');
+
+      $product = new Product;
+      $product->name = $rq['name'];
+      $product->price = $rq['price'];
+      $product->description = $rq['description'];
+      $product->menu_id = $rq['menu'];
+      if ($rq->hasFile('img')) {
+        $product->image = $rq->file('img')->store('public/product');
+      }
+
+      $product->save();
+
+      return redirect('/home');
     }
 
     /**
@@ -52,13 +65,12 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show(Product $id)
     {
-        $product = Product::find($id);
-        return view('website.products.show',
-        [
-            'product' => $product,
-        ]);
+
+      return view('website.products.show',[
+            'product' => Product::findOrFail($id)->first()
+      ]);
     }
 
     /**
@@ -74,6 +86,7 @@ class ProductController extends Controller
         return view('admin.products.edit',
         [
             'product' => $product,
+            'menues'=> Menu::all(),
         ]);
     }
 
@@ -102,5 +115,10 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $product->delete();
         return redirect('/home');
+    }
+
+    public function reporting()
+    {
+      return view('admin.reporting.index');
     }
 }

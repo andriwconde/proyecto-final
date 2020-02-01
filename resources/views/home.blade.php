@@ -1,13 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@if (session('status'))
-  <div class="alert alert-success" role="alert">
-      {{ session('status') }}
-  </div>
-@endif
-
-
 
 <!-- PRODUCTOS -->
 <div class="col-10 rounded mx-auto d-block">
@@ -15,15 +8,16 @@
   @foreach ($menues as $menu)
     <section class="my-4">
 
-      <h1 id="tituloMenu">{{$menu->name}}</h1>
+      <h1 class="tituloMenu">{{$menu->name}}</h1>
 
       <div class="row">
         @foreach ($menu->products as $product)
           <div class="col-md-4">
             <div class="row">
-                <img src="img/postres.jpeg" alt="Menu">
-                <p class="grey-text"></p>
-                <a class="btn btn-outline-dark btn-sm" href="">Ver detalle</a>
+                <img src="{{ Storage::url($product->image) }}" alt="Menu">
+                <h3>{{$product->name}}</h3>
+                <p class="grey-text">{{$product->description}}</p>
+                <a class="btn btn-outline-dark btn-sm" href="products/{{$product->id}}">Ver detalle</a>
             </div>
           </div>
         @endforeach
@@ -43,7 +37,9 @@
 
       <div class="col-md-4">
 
-        <a href="contacto.php"><i class="fas fa-map-marked-alt fa-3x red-text"></i></a>
+        <a href="contacto.php">
+          <i class="fas fa-map-marked-alt fa-3x red-text"></i>
+        </a>
         <h5 class="font-weight-bold my-4">Contactanos</h5>
 
       </div>

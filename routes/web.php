@@ -24,38 +24,9 @@ Route::get('/products/{id}/edit', 'ProductController@edit');
 Route::patch('/products/{id}', 'ProductController@update');
 Route::delete('/products/{id}', 'ProductController@destroy');
 
+Route::get('/reporting', 'ProductController@reporting');
+Route::get('/search', 'ProductController@search');
 
-Route::get('/detalle/{id}', function ($id) {
-
-    return 'Aqui vemos el detalle del producto' . ' ' . $id;
-    /*
-    view('detalle',
-    [
-        'id' => $id,
-        'precios' => 88888.99,
-        'descripcion' => "Lorem ipsum dolor",
-        'titulo' => "Lorem Ipsum",
-        'imagen' => "imagen",
-    ]);
-    */
-
-});
-
-Route::get('/cart', function () {
-    return 'Este es tu carrito'; /* view('cart') */
-});
-
-Route::post('/cart', function () {
-    return 'Podes agregar nuevos productos';
-});
-
-Route::get('/faq', function () {
-    return 'La preguntas que mas nos hacen'; /* view('faq') */;
-});
-
-Route::get('/contacto', function () {
-    return 'Encontranos en Digital House'; /* view('contacto') */;
-});
 
 Auth::routes();
 //

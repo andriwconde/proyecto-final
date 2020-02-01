@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
 
-    public $fillable=[];
+    public $fillable=['name', 'price', 'description','menu_id','image'];
 
     public function menu(){
-      return $this->belongsTo(menu::class, 'menu_id');
+      return $this->belongsTo('App\Menu', 'menu_id');
     }
 
     // function para traer todos el menu al cual pertenece un producto
