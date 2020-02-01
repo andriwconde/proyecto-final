@@ -28,34 +28,38 @@
 
 </div>
 
-  <hr>
 
-  <!-- SECTION INFORMATIVA -->
   <section class="text-center rounded mx-auto d-block my-5">
 
     <div class="row col-12">
 
       <div class="col-md-4">
 
-        <a href="contacto.php">
-          <i class="fas fa-map-marked-alt fa-3x red-text"></i>
+        <a href="{{route('contactanos')}}">
+          <i class="fas fa-map-marked-alt fa-3x red-text">
+            <h5 class="font-weight-bold my-4">Contactanos</h5>
+          </i>
         </a>
-        <h5 class="font-weight-bold my-4">Contactanos</h5>
+
 
       </div>
 
       <div class="col-md-4">
 
-        <a href="#"><i class="fas fa-book fa-3x cyan-text"></i></a>
-        <h5 class="font-weight-bold my-4">FQA</h5>
+
+        <a href="{{route('faqs')}}">
+          <i class="fas fa-book fa-3x cyan-text">
+          <h5 class="font-weight-bold my-4">FQA</h5>
+        </i>
+      </a>
 
       </div>
 
       <div class="col-md-4">
 
-        <a href="#"><i class="far fa-address-card fa-3x orange-text"></i></a>
+        <a href="{{route('nosotros')}}"><i class="far fa-address-card fa-3x orange-text">
         <h5 class="font-weight-bold my-4">Nosotros</h5>
-
+        </i></a>
       </div>
 
     </div>

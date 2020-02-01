@@ -31,4 +31,16 @@ class HomeController extends Controller
       // Llamar al metodo Menu::all
         return view('home', ['menues'=>$menues]);
     }
+    public function faqs()
+    {
+        return view('faqs');
+    }
+    public function contactanos()
+    {
+        return view('contactanos');
+    }
+    public function nosotros()
+    {
+        return view('nosotros');
+    }
 }

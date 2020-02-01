@@ -23,6 +23,9 @@ Route::post('/products', 'ProductController@store');
 Route::get('/products/{id}/edit', 'ProductController@edit');
 Route::patch('/products/{id}', 'ProductController@update');
 Route::delete('/products/{id}', 'ProductController@destroy');
+Route::get('/faqs', 'HomeController@faqs')->name('faqs');
+Route::get('/contactanos', 'HomeController@contactanos')->name('contactanos');
+Route::get('/nosotros', 'HomeController@nosotros')->name('nosotros');
 
 Route::get('/reporting', 'ProductController@reporting');
 Route::get('/search', 'ProductController@search');
