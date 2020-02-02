@@ -14,7 +14,7 @@
         @foreach ($menu->products as $product)
           <div class="col-md-4">
             <div class="row">
-                <img src="{{ Storage::url($product->image) }}" alt="Menu">
+                <img src="{{ Storage::url($product->image) }}" max-width="50%"  alt="Menu">
                 <h3>{{$product->name}}</h3>
                 <p class="grey-text">{{$product->description}}</p>
                 <a class="btn btn-outline-dark btn-sm" href="products/{{$product->id}}">Ver detalle</a>

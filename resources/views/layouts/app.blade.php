@@ -18,11 +18,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/registro.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/nav-bar.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" id="barra_nav">
             <div class="container col-12">
                 <a class="navbar-brand " href="{{ url('/') }}">
                   <img src="http://wooyko.com/templates/jblank/images/logo.png" width="10%"alt="">
@@ -35,9 +36,18 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                       @auth
-                        @if (Auth::user()->role->status == "Admin")                          
+                        @if (Auth::user()->role->status == "Admin")
                           <li class="nav-item">
                             <a class="nav-link" href="/products/add">Agregar Producto</a>
+                          </li>
+                        @endif
+                      @endauth
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                      @auth
+                        @if (Auth::user()->role->status == "Admin")
+                          <li class="nav-item">
+                            <a class="nav-link" href="/menus/add">Agregar menu</a>
                           </li>
                         @endif
                       @endauth
