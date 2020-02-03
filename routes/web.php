@@ -17,6 +17,7 @@
 Route::get('/', 'HomeController@index');
 
 //RUtas para Products
+Route::get('/products/destroy', 'ProductController@del')->middleware('admin');
 Route::get('/products', 'ProductController@index');
 Route::get('/products/add', 'ProductController@create')->middleware('admin');
 Route::get('/products/{id}', 'ProductController@show');
@@ -24,6 +25,7 @@ Route::post('/products', 'ProductController@store');
 Route::get('/products/{id}/edit', 'ProductController@edit');
 Route::patch('/products/{id}', 'ProductController@update');
 Route::delete('/products/{id}', 'ProductController@destroy');
+
 
 //rutas para menus
 Route::get('/menus', 'menuController@index');

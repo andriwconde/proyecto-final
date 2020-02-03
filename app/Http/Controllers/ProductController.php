@@ -110,8 +110,10 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+
+    public function destroy(Request $request, $id)
     {
+        
         $product = Product::findOrFail($id);
         $product->delete();
         return redirect('/home');
@@ -121,4 +123,14 @@ class ProductController extends Controller
     {
       return view('admin.reporting.index');
     }
+    public function del()
+    {
+
+        $products = Product::all();
+        return view('admin.products.index',  [
+            'products' => $products,
+          ]);
+
+    }
+
 }
