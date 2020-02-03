@@ -8,16 +8,20 @@
   @foreach ($menues as $menu)
     <section class="my-4">
 
-      <h1 class="tituloMenu">{{$menu->name}}</h1>
+      <div class="titulo">
+        <h1 class="tituloMenu pl-3 pb-2">{{$menu->name}}</h1>
+      </div>
 
       <div class="row">
         @foreach ($menu->products as $product)
-          <div class="col-md-4">
+          <div class="col-md-2 mx-2">
             <div class="row">
-                <img src="{{ Storage::url($product->image) }}" max-width="50%"  alt="Menu">
-                <h3>{{$product->name}}</h3>
-                <p class="grey-text">{{$product->description}}</p>
-                <a class="btn btn-outline-dark btn-sm" href="products/{{$product->id}}">Ver detalle</a>
+                <img src="{{ Storage::url($product->image) }}" max-width="20%"  alt="Menu">
+                <div class="piedfoto ">
+                  <h3>{{$product->name}}</h3>
+                  <p class="grey-text">{{$product->description}}</p>
+                  <a class="btn btn-outline-dark btn-sm" href="products/{{$product->id}}">Ver detalle</a>
+                </div>
             </div>
           </div>
         @endforeach
@@ -33,7 +37,7 @@
 
     <div class="row col-12">
 
-      <div class="col-md-4">
+      <div class="col-md-6 foo">
 
         <a href="{{route('contactanos')}}">
           <i class="fas fa-map-marked-alt fa-3x red-text">
@@ -44,7 +48,7 @@
 
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-6 foo">
 
 
         <a href="{{route('faqs')}}">
@@ -54,14 +58,6 @@
       </a>
 
       </div>
-
-      <div class="col-md-4">
-
-        <a href="{{route('nosotros')}}"><i class="far fa-address-card fa-3x orange-text">
-        <h5 class="font-weight-bold my-4">Nosotros</h5>
-        </i></a>
-      </div>
-
     </div>
 
   </section>

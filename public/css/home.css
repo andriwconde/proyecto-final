@@ -11,6 +11,13 @@ footer div.footer-copyright{
   background-color: #462323;
 }
 
+section .titulo{
+  border-radius: 30px;
+  background-color: #FFD639;
+}
+body{
+  background-image: url("../fondo.jpeg");
+}
 /* ENLACES */
 a{
   color: #127475;
@@ -19,18 +26,19 @@ a{
 i{
   color: #E56B6F;
 }
-
+.foo{
+  border-radius: 30px;
+  background-color: #FFD639;
+}
+.piedfoto{
+  padding:10px;
+  border-radius: 10px;
+    background-color: #FFD639;
+}
 /* IMAGENES */
-section img{
-  width: 100%;
-}
+
 /* TITULO MENU */
-#tituloMenu{
-  color: #562C2C;
-  text-transform: uppercase;
-  background-color: #F5DFBB;
-  padding-left: 15px;
-}
+
 .row{
   margin-left: 0px;
   margin-right: 0px;
