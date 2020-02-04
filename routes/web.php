@@ -28,6 +28,7 @@ Route::delete('/products/{id}', 'ProductController@destroy');
 
 
 //rutas para menus
+Route::get('/menus/destroy', 'MenuController@del')->middleware('admin');
 Route::get('/menus', 'menuController@index');
 Route::get('/menus/add', 'menuController@create')->middleware('admin');
 Route::get('/menus/{id}', 'menuController@show');
