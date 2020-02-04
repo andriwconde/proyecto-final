@@ -39,7 +39,7 @@ Route::delete('/menus/{id}', 'menuController@destroy');
 Route::get('/faqs', 'HomeController@faqs')->name('faqs');
 Route::get('/contactanos', 'HomeController@contactanos')->name('contactanos');
 Route::get('/nosotros', 'HomeController@nosotros')->name('nosotros');
-
+Route::get('/cart', 'CartsController@index');
 Route::get('/reporting', 'ProductController@reporting');
 Route::get('/search', 'ProductController@search');
 

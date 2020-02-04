@@ -43,4 +43,9 @@ class HomeController extends Controller
     {
         return view('nosotros');
     }
+
+    public function carrito()
+    {
+        return view('carrito');
+    }
 }
