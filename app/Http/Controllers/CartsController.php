@@ -26,9 +26,9 @@ class CartsController extends Controller
     public function index()
     {
         
-        $carts = Cart::find(1);
+        $carts = Cart::all();
         //dd($carts->products[0]->pivot->product_qty);
-        dd($carts->products[0]->carts);
+        //dd($carts->products[0]->carts);
         // mandar a la vista el listado de menues
         // Agregar el modelo de Menu
         // Llamar al metodo Menu::all

@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
- $menues = Menu::all();
+       $menues = Menu::all();
 
       // mandar a la vista el listado de menues
       // Agregar el modelo de Menu
