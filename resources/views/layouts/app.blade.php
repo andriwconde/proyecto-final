@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/registro.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/product_view.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
