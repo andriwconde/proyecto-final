@@ -115,4 +115,14 @@ class MenuController extends Controller
   {
     return view('admin.reporting.index');
   }
+
+  public function del()
+  {
+
+      $menus = Menu::all();
+      return view('admin.menus.index',  [
+          'menus' => $menus,
+        ]);
+
+  }
 }
