@@ -1,5 +1,18 @@
 
+#informacion{
+  background-color: rgba(236, 162, 104, 0.7);
+ border-radius: 5px;
+ color: #FFF;
+}
 
+div #informacion{
+  padding: 300px 75px 75px 15px;
+}
+
+section{
+  border-radius: 10px;
+
+}
 /* FOOTER */
 footer{
   background-color: #562C2C;

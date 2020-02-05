@@ -98,7 +98,7 @@
     </div>
 
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="inicio.php"> Logo.com</a>
+      <a href="inicio.php"> Wooyko.com</a>
     </div>
 
   </footer>
