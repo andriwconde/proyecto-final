@@ -1,0 +1,29 @@
+
+/* TITULOS */
+div.card-body{
+  padding-right: 15px;
+padding-left: 15px;
+  color: #127475;
+  margin-bottom: 0px;
+  background-color: #F5DFBB;
+}
+div.card-header{
+  padding: 2vh;
+  color: #E56B6F;
+  background-color: #562C2C;
+}
+
+#boton{
+  color: #FFFF;
+background-color: #E56B6F;
+border-color: #E56B6F;
+}
+
+/* FOOTER */
+footer{
+  background-color: #562C2C;
+}
+footer div.footer-copyright{
+  color: #E56B6F;
+  background-color: #462323;
+}

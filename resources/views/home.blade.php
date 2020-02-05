@@ -79,17 +79,9 @@
             <a class="tw-ic" href="https://www.twitter.com/">
               <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
-            <!--Linkedin -->
-            <a class="li-ic" href="https://www.linkedin.com/">
-              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
             <!--Instagram-->
             <a class="ins-ic" href="https://www.instagram.com/">
               <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a>
-            <!--Pinterest-->
-            <a class="pin-ic" href="https://www.pinterest.com/">
-              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
             </a>
           </div>
         </div>
@@ -98,7 +90,7 @@
     </div>
 
     <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="inicio.php"> Wooyko.com</a>
+      <a href="{{ url('/') }}"> Wooyko.com</a>
     </div>
 
   </footer>

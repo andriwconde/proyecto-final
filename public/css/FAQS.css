@@ -79,14 +79,8 @@ h5.col-md-12{
   border-color: #BD575A;
 }
 
-a:hover{
+footer a:hover{
   text-decoration: none;
-}
-
-
-/* CARRUSEL */
-.carousel-inner{
-  height: 60vh;
 }
 /* FOOTER */
 footer{
@@ -104,9 +98,9 @@ footer i{
 a{
   color: #127475;
 }
-#botonhead{
-  background-color: #562C2C;
-}
-#titulo{
 
+section #titulo{
+  padding: 2vh;
+  color: #E56B6F;
+  background-color: #562C2C;
 }

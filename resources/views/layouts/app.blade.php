@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/FAQS.css">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
     <div id="app">
@@ -86,7 +86,7 @@
                         <a class="dropdown-item" href="/menus/destroy">Eliminar</a>
                   </div>
                 </li>
-    
+
                 <li class="nav-item dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Productos
@@ -109,6 +109,7 @@
             @yield('content')
         </main>
     </div>
+    <script src="https://kit.fontawesome.com/042e86d63f.js" crossorigin="anonymous"></script>
     <script src="script.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
