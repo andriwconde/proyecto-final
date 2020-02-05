@@ -1,24 +1,51 @@
 
 #pregunta1{
-background-color: #ffa3af;
+color: #FFFF;
 font-family: 'Hind', sans-serif;
+text-decoration: none;
 }
 #pregunta2{
-  background-color: #ffa3af;
+  color: #FFFF;
   font-family: 'Hind', sans-serif;
+  text-decoration: none;
 }
 #pregunta3{
-  background-color: #ffa3af;
+  color: #FFFF;
   font-family: 'Hind', sans-serif;
+  text-decoration: none;
+}
+#pregunta4{
+  color: #FFFF;
+  font-family: 'Hind', sans-serif;
+  text-decoration: none;
+}
+#pregunta5{
+  color: #FFFF;
+  font-family: 'Hind', sans-serif;
+  text-decoration: none;
+}
+#pregunta6{
+  color: #FFFF;
+  font-family: 'Hind', sans-serif;
+  text-decoration: none;
 }
 #headingOne{
-background-color: #97d8c4;
+background-color: #E16A0D;
 }
 #headingTwo{
-background-color: #00af54;
+background-color: #E57D2B;
 }
 #headingThree{
-background-color: #fbaf00
+background-color: #E88F4A;
+}
+#headingFour{
+background-color: #ECA268;
+}
+#headingFive{
+background-color: #F0B486;
+}
+#headingSix{
+background-color: #F4C7A4;
 }
 *{
   font-family: 'Poppins', sans-serif;
@@ -43,7 +70,7 @@ h5.col-md-12{
 }
 /* COLOR BOTONES */
 .btn-outline-dark{
-  color: #FFF;
+  color: #FFFF;
   background-color: #E56B6F;
   border-color: #E56B6F;
 }
@@ -70,7 +97,7 @@ footer div.footer-copyright{
   background-color: #462323;
 }
 /* LOGOS FOOTER */
-i{
+footer i{
   color: #E56B6F;
 }
 /* ENLACES */
