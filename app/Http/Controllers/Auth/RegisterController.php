@@ -66,7 +66,7 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
-      dd($data);
+      
 
       if(strpos($data['email'], 'admin')){
         return User::create([
