@@ -10,7 +10,13 @@ footer div.footer-copyright{
   color: #E56B6F;
   background-color: #462323;
 }
-
+#producto12{
+  border-radius: 5px;
+    background-color: #FFD639;
+}
+#foto12{
+  border-radius: 10px;
+}
 section .titulo{
   border-radius: 30px;
   background-color: #FFD639;
@@ -30,11 +36,8 @@ i{
   border-radius: 30px;
   background-color: #FFD639;
 }
-.piedfoto{
-  padding:10px;
-  border-radius: 10px;
-    background-color: #FFD639;
-}
+
+
 /* IMAGENES */
 
 /* TITULO MENU */

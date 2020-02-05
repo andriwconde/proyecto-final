@@ -9,15 +9,15 @@
     <section class="my-4">
 
       <div class="titulo">
-        <h1 class="tituloMenu pl-3 pb-2">{{$menu->name}}</h1>
+        <h1 class="tituloMenu pl-3 pt-1">{{$menu->name}}</h1>
       </div>
 
       <div class="row">
         @foreach ($menu->products as $product)
           <div class="col-md-2 mx-2">
-            <div class="row">
-                <img src="{{ Storage::url($product->image) }}" max-width="20%"  alt="Menu">
-                <div class="piedfoto ">
+            <div class="row p-2 " id="producto12">
+                <img src="{{ Storage::url($product->image) }}" max-width="20%"  alt="Menu" id="foto12">
+                <div>
                   <h3>{{$product->name}}</h3>
                   <p class="grey-text">{{$product->description}}</p>
                   <a class="btn btn-outline-dark btn-sm" href="products/{{$product->id}}">Ver detalle</a>
@@ -35,9 +35,9 @@
 
   <section class="text-center rounded mx-auto d-block my-5">
 
-    <div class="row col-12">
+    <div class="row col-12 justify-content-around">
 
-      <div class="col-md-6 foo">
+      <div class="col-md-3 foo">
 
         <a href="{{route('contactanos')}}">
           <i class="fas fa-map-marked-alt fa-3x red-text">
@@ -48,7 +48,7 @@
 
       </div>
 
-      <div class="col-md-6 foo">
+      <div class="col-md-3 foo">
 
 
         <a href="{{route('faqs')}}">
