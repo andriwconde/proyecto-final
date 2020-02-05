@@ -12,6 +12,11 @@ footer div.footer-copyright{
 i{
   color: #E56B6F;
 }
+#contacto12{
+  border-radius: 5px;
+    background-color: #FFD639;
+    height: 90px;
+}
 /* ENLACES */
 a{
   text-transform: uppercase;

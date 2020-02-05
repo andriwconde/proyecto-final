@@ -10,7 +10,7 @@
 
   <div class="accordion m-0" id="accordionExample">
   <div class="card">
-    <div class="card-header hiper" id="headingOne">
+    <div class="card-header hiper " id="headingOne">
       <h2 class="mb-0 hiper">
         <button class="btn btn-link hiper" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="pregunta1">
           Pregunta #1

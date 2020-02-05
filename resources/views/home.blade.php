@@ -9,7 +9,7 @@
     <section class="my-4">
 
       <div class="titulo">
-        <h1 class="tituloMenu pl-3 pb-2">{{$menu->name}}</h1>
+        <h1 class="tituloMenu pl-3 pt-1">{{$menu->name}}</h1>
       </div>
 
       <div class="row">
@@ -35,9 +35,9 @@
 
   <section class="text-center rounded mx-auto d-block my-5">
 
-    <div class="row col-12">
+    <div class="row col-12 justify-content-around">
 
-      <div class="col-md-6 foo">
+      <div class="col-md-3 foo">
 
         <a href="{{route('contactanos')}}">
           <i class="fas fa-map-marked-alt fa-3x red-text">
@@ -48,7 +48,7 @@
 
       </div>
 
-      <div class="col-md-6 foo">
+      <div class="col-md-3 foo">
 
 
         <a href="{{route('faqs')}}">

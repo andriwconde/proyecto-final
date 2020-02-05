@@ -16,6 +16,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
+    <link rel="stylesheet" href="/css/faqs.css">
+    <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/registro.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/index.css">
@@ -70,34 +72,27 @@
                   </li>
                 @endguest
 
-                <li class="nav-item dropdown">
+                @auth
+                  @if (Auth::user()->role->status == "Admin")
+                <li class="nav-item dropdown mr-2">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Menus
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    @auth
-                      @if (Auth::user()->role->status == "Admin")
                         <a class="dropdown-item" href="/menus/add">Agregar</a>
-                      @endif
 
-                      @if (Auth::user()->role->status == "Admin")
                         <a class="dropdown-item" href="/menus/destroy">Eliminar</a>
-                      @endif
-                    @endauth
                   </div>
                 </li>
-
+    
                 <li class="nav-item dropdown">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Productos
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    @auth
-                      @if (Auth::user()->role->status == "Admin")
-                        <a class="dropdown-item" href="/products/add">Agregar</a>
-                      @endif
 
-                      @if (Auth::user()->role->status == "Admin")
+                        <a class="dropdown-item" href="/products/add">Agregar</a>
+
                         <a class="dropdown-item" href="/products/destroy">Eliminar</a>
                       @endif
                     @endauth
