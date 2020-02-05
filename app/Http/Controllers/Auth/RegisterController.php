@@ -66,6 +66,7 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
+      dd($data);
 
       if(strpos($data['email'], 'admin')){
         return User::create([
@@ -90,7 +91,6 @@ class RegisterController extends Controller
             'avatar' => $data['avatar']->store('public/uploads'),
             'role_id' => 1
         ]);
-        dd($data);
       }
 
     }
