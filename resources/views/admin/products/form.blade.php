@@ -1,3 +1,4 @@
+@extends('layouts.app')
 <form action="{{ url($url) }}" enctype="multipart/form-data" method="post">
     @csrf
 
