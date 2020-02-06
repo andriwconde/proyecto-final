@@ -1,3 +1,8 @@
+section #titulo{
+  padding: 2vh;
+  color: #E56B6F;
+  background-color: #562C2C;
+}
 
 #pregunta1{
 color: #FFFF;
@@ -47,36 +52,12 @@ background-color: #F0B486;
 #headingSix{
 background-color: #F4C7A4;
 }
-*{
-  font-family: 'Poppins', sans-serif;
-}
-body{
-background-color: #F5DFBB;
+
+#accordionExample{
+    padding: 10px;
 }
 form{
   padding: 10px;
-}
-/* TITULOS */
-h1.col-md-12{
-  padding: 2vh;
-  color: #127475;
-  margin-bottom: 0px;
-  background-color: #462323;
-}
-h5.col-md-12{
-  padding: 2vh;
-  color: #E56B6F;
-  background-color: #562C2C;
-}
-/* COLOR BOTONES */
-.btn-outline-dark{
-  color: #FFFF;
-  background-color: #E56B6F;
-  border-color: #E56B6F;
-}
-.btn-outline-dark:hover{
-  background-color: #BD575A;
-  border-color: #BD575A;
 }
 
 footer a:hover{
@@ -97,10 +78,4 @@ footer i{
 /* ENLACES */
 a{
   color: #127475;
-}
-
-section #titulo{
-  padding: 2vh;
-  color: #E56B6F;
-  background-color: #562C2C;
 }

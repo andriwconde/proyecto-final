@@ -19,6 +19,10 @@ background-color: #E56B6F;
 border-color: #E56B6F;
 }
 
+a #olvidar{
+  color: #127475;
+}
+
 /* FOOTER */
 footer{
   background-color: #562C2C;
